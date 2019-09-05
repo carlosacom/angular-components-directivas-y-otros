@@ -1,0 +1,9 @@
+<div class="alert" [ngClass]="alerta" role="alert">
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, modi?
+</div>
+<button type="button" (click)="alerta = 'alert-primary'" class="btn btn-primary">alert-primary</button>
+<button type="button" (click)="alerta = 'alert-success'" class="btn btn-success">alert-success</button>
+<button type="button" (click)="alerta = 'alert-danger'" class="btn btn-danger">alert-danger</button>
+
+<h3 [ngClass]="{'text-danger': propiedades.danger, 'text-info': !propiedades.danger}" >Hola mundo</h3>
+<button type="button" class="btn btn-danger" (click)="propiedades.danger = !propiedades.danger">cambiar estado</button>
